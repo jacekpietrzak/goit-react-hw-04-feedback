@@ -11,7 +11,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             className={clsx(css.button, css[option])}
             type="button"
             name={option}
-            onClick={onLeaveFeedback}
+            onClick={() => onLeaveFeedback(option)}
             key={option}
           >
             {option}
